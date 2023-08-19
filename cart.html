@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheJunge | Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <aside class="aside">
+        <header>
+            <h1 class="logo">logo</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><button class="aside__button-category">Productos</button></li>
+                <li><button class="aside__button-category">Remeras</button></li>
+                <li><button class="aside__button-category">Pantalones</button></li>
+                <li><button class="aside__button-category">Zapatillas</button></li>
+                <li> <i class="bi bi-cart2"></i> <a class="aside__button-cart" href="./cart.html">Carrito <span class="aside__cart-number"></span></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main">
+        <h2 class="main__h2">Productos en mi carrito</h2>
+        <section class="cart__container">
+            <div class="cart__product">
+                <img src="./img/remeras/remera.jpg" alt="">
+                <div class="cart__product-name">
+                    <small>Title</small>
+                    <p>remera</p>
+                </div>
+                <div class="cart__product-quantity">
+                    <small>Cantidad</small>
+                    <p>1</p>
+                </div>
+                <div class="cart__product-price">
+                    <small>Precio unitario</small>
+                    <p>100</p>
+                </div>
+                <div class="cart__product-total">
+                    <small>Precio total</small>
+                    <p>100</p>
+                </div>
+                <button class="cart__product-delete"><i class="bi bi-trash3"></i></button>
+            </div>
+        </section>
 
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="./js/cart.js"></script>
 </body>
 </html>
